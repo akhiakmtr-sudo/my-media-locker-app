@@ -6,10 +6,15 @@
     <title>My Secure Media Locker</title>
     <link rel="stylesheet" href="style.css">
     <!-- Firebase SDKs - use compat versions for simplicity with plain JS -->
-    <!-- Use the latest versions available on Firebase console or documentation -->
+    <!-- Always use the latest stable versions from Firebase documentation if possible -->
     <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-storage-compat.js"></script>
+
+    <!-- Load Firebase configuration first -->
+    <script src="firebase-config.js"></script>
+    <!-- Then load your main application logic -->
+    <script src="app-logic.js"></script>
 </head>
 <body>
 
@@ -87,7 +92,5 @@
             </div>
         </main>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
